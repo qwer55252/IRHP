@@ -1,0 +1,7 @@
+# Candidate compatibility constraints; not the original experimental lockfile.
+torch==2.5.1
+torchaudio==2.5.1
+lightning==2.4.0
+transformers==4.53.3
+numpy==1.26.4
+peft==0.15.2
