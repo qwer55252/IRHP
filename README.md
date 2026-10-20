@@ -12,7 +12,7 @@ IRHP progressively prunes redundant attention heads through repeated parameter r
 
 > **Checkpoints:** Trained IRHP checkpoints are not distributed. Run pruning and fine-tuning to create your own checkpoint. The Wav2Vec 2.0 recipe starts from the public [`facebook/wav2vec2-base-100h`](https://huggingface.co/facebook/wav2vec2-base-100h) weights, downloaded automatically. Conformer experiments retain their public NeMo pretrained starting points.
 >
-> **Validation:** Small-model CPU tests cover structural pruning and checkpoint reload. Full paper-scale GPU runs remain pending. Conformer requires an additional NeMo attention patch; see [its status](docs/conformer.md).
+> **Validation:** Small-model CPU tests cover structural pruning and checkpoint reload. Full paper-scale GPU runs remain pending. Conformer uses NeMo 2.5.0, aligned with GRP-KD, and requires an additional attention-map patch; see [its status](docs/conformer.md).
 
 ## Reported results
 

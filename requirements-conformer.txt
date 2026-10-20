@@ -1,0 +1,9 @@
+# Separate Conformer environment; aligned with GRP-KD.
+# Install torch/torchaudio first; see docs/conformer.md.
+-c constraints-conformer.txt
+nemo_toolkit[asr]==2.5.0
+datasets==3.2.0
+scipy==1.14.1
+scikit-learn==1.5.2
+wandb>=0.17,<1
+-e .

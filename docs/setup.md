@@ -45,4 +45,4 @@ The first real training run needs network access to download the pretrained Wav2
 
 ## Conformer
 
-Do not install a newer NeMo into the Wav2Vec 2.0 environment without checking dependency compatibility. The original NeMo version and its attention-return patch are missing from the research snapshot. See [Conformer status](conformer.md); no verified installation recipe is claimed for that path yet.
+Conformer uses official NeMo 2.5.0 and the same candidate dependency constraints as GRP-KD. Install `requirements-conformer.txt` in a separate environment following [Conformer setup](conformer.md). Its Transformers 4.53.3 pin differs from the default Wav2Vec 2.0 environment. The IRHP attention-map patch remains unavailable; version alignment alone does not make Conformer training reproducible. The complete Conformer environment and CUDA workflow remain unverified.
