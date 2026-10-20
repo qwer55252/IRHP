@@ -1,0 +1,25 @@
+name: CPU validation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-24.04
+    env:
+      OMP_NUM_THREADS: '1'
+      HF_HUB_OFFLINE: '1'
+      TRANSFORMERS_OFFLINE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: pip
+      - run: python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pip check
+      - run: python -m compileall -q irhp cmd data_scripts tests
+      - run: python -m unittest discover -s tests -v
+      - run: python -m irhp.train --help
+      - run: python -m irhp.evaluate --help
+      - run: bash -n cmd/train.sh cmd/evaluate.sh

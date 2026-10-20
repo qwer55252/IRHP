@@ -1,0 +1,16 @@
+{
+  "status": "Historical recipe; requires the original NeMo attention patch",
+  "entrypoint": "irhp.conformer.train",
+  "model_name_or_path": "nvidia/stt_en_conformer_ctc_small",
+  "data_config_name": "train_100",
+  "data_train_split": "train.clean.100",
+  "data_val_split": "dev.clean",
+  "data_test_split": "test.clean",
+  "dataset_name": "librispeech",
+  "method": "redundancy-based",
+  "prune_ratio": 0.5,
+  "iterations": 10,
+  "iterative_finetune_epochs": 2,
+  "final_finetune_epochs": 100,
+  "batch_size": 32
+}

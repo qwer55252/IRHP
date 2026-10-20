@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "irhp"
+version = "0.1.0"
+description = "Iterative redundancy-based head pruning for speech recognition"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {text = "Apache-2.0"}
+authors = [{name = "Sang-Heon Jeong"}, {name = "Dong-Hyun Kim"}, {name = "Joon-Hyuk Chang"}]
+
+[project.scripts]
+irhp-train = "irhp.train:main"
+irhp-evaluate = "irhp.evaluate:main"
+
+[tool.setuptools.packages.find]
+include = ["irhp*"]

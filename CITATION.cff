@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use IRHP, please cite the ICASSP 2026 paper below."
+title: "IRHP: Iterative Redundancy-Based Head Pruning for Efficient Self-Supervised Speech Recognition Models"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/qwer55252/IRHP"
+authors:
+  - family-names: Jeong
+    given-names: Sang-Heon
+  - family-names: Kim
+    given-names: Dong-Hyun
+  - family-names: Chang
+    given-names: Joon-Hyuk
+preferred-citation:
+  type: conference-paper
+  title: "Iterative Redundancy-Based Head Pruning for Efficient Self-Supervised Speech Recognition Models"
+  authors:
+    - family-names: Jeong
+      given-names: Sang-Heon
+    - family-names: Kim
+      given-names: Dong-Hyun
+    - family-names: Chang
+      given-names: Joon-Hyuk
+  collection-title: "2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+  year: 2026
+  url: "https://www.cmsworkshops.com/ICASSP2026/view_paper.php?PaperNum=17724"
