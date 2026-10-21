@@ -6,7 +6,7 @@
 
 Sang-Heon Jeong, Dong-Hyun Kim, and Joon-Hyuk Chang · Hanyang University
 
-[Paper](https://www.cmsworkshops.com/ICASSP2026/view_paper.php?PaperNum=17724) · [Setup](docs/setup.md) · [Data](docs/data.md) · [Reproduction](docs/reproducibility.md) · [Results](docs/results.md) · [Citation](#citation)
+[Paper](https://ieeexplore.ieee.org/abstract/document/11460668) · [Setup](docs/setup.md) · [Data](docs/data.md) · [Reproduction](docs/reproducibility.md) · [Results](docs/results.md) · [Citation](#citation)
 
 IRHP progressively prunes redundant attention heads through repeated parameter re-initialization, short fine-tuning, attention-map analysis, and spectral clustering. This repository contains the Wav2Vec 2.0 implementation and the historical Conformer experiments.
 
